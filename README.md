@@ -1,0 +1,2 @@
+# Segnet-in-Keras
+Implement a Segnet style network with skip connections between encoder and autoencoder. The skip connections collect the indexes used for the maxpooling operations on the encoder side and use them to guide the upsampling operations on the decoder side.  This type of index connections are not trivial to implement in Keras, therefore custom layers for the MaxPooling and UpSampling operations were defined.  The whole code was developed as a Jupyter notebook and tested in Google Colab  
